@@ -17,5 +17,6 @@
   "background_color": "#000000",
   "display": "standalone",
   "start_url": "https://hubspot-api-integration-2lm0h3wcq-nousheens-projects-072e644b.vercel.app/",
-  "description": "Book Store App to enter book details."
+  "description": "Book Store App to enter book details.",
+  "id": "/"
 }
