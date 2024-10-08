@@ -1,0 +1,1 @@
+**My HubSpot developer test account custom objects URL link is:** [https://app-eu1.hubspot.com/contacts/145348338/objects/2-133091685/views/all/list](https://app-eu1.hubspot.com/contacts/145348338/objects/2-133091685/views/all/list)s
