@@ -1,10 +1,6 @@
 {
-  "name": "Custom Object Table - Books",
-  "short_name": "Books",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000",
+  "name": "Books Records",
+  "short_name": "Books Records",
   "icons": [
     {
       "src": "icons/icon-192x192.png",
@@ -16,5 +12,10 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "https://hubspot-api-integration-2lm0h3wcq-nousheens-projects-072e644b.vercel.app/",
+  "description": "Book Store App to enter book details."
 }
