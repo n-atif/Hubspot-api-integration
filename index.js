@@ -1,14 +1,26 @@
 const express = require('express');
 const axios = require('axios');
+const path = require('path');
 const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'pug');
-app.use(express.static(__dirname + '/public'));
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require('dotenv').config();
 const PRIVATE_APP_ACCESS = process.env.PRIVATE_APP_ACCESS;
+
+// Serve manifest.json
+app.get('/manifest.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'manifest.json'));
+});
+
+// Serve service-worker.js
+app.get('/service-worker.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'service-worker.js'));
+});
 
 
 // TODO: ROUTE 1 - Create a new app.get route for the homepage to call your custom object data. Pass this data along to the front-end and create a new pug template in the views folder.
