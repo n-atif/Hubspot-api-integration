@@ -4,6 +4,17 @@ html
         title= title
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="css/style.css")
+        link(rel="manifest", href="/manifest.json")
+        script.
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function(error) {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+                });
+            }
     body    
         h1 Custom Object Table - Books
 

@@ -57,7 +57,7 @@ app.post('/update-cobj', async (req, res) => {
         }
     };
 
-    const createBookApiUrl = 'https://api.hubspot.com/crm/v3/objects/bookss';
+    const createBookApiUrl = 'https://api.hubspot.com/crm/v3/objects/books';
 
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
